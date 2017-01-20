@@ -12,7 +12,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -22,50 +21,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27b-Gc-MBD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27b-Gc-MBD">
                                 <rect key="frame" x="175" y="82" width="25" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ma6-Dd-X4V">
-                                <rect key="frame" x="138" y="111" width="98" height="30"/>
-                                <state key="normal" title="Next Question"/>
-                                <connections>
-                                    <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XtD-jz-DvN"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0F-LR-aDF">
-                                <rect key="frame" x="175" y="163" width="25" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0F-LR-aDF">
+                                <rect key="frame" x="175" y="173" width="25" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNQ-Cz-gET">
-                                <rect key="frame" x="141" y="236" width="93" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNQ-Cz-gET">
+                                <rect key="frame" x="141" y="246" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Show Answer"/>
                                 <connections>
                                     <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YgO-h6-E0m"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ma6-Dd-X4V">
+                                <rect key="frame" x="139" y="111" width="98" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next Question"/>
+                                <connections>
+                                    <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XtD-jz-DvN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="s0F-LR-aDF" firstAttribute="top" secondItem="Ma6-Dd-X4V" secondAttribute="bottom" constant="22" id="4hZ-AI-nTD"/>
-                            <constraint firstItem="27b-Gc-MBD" firstAttribute="centerX" secondItem="Ma6-Dd-X4V" secondAttribute="centerX" id="66L-nc-K0g"/>
-                            <constraint firstItem="27b-Gc-MBD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JtQ-WY-dbZ"/>
-                            <constraint firstItem="Ma6-Dd-X4V" firstAttribute="top" secondItem="27b-Gc-MBD" secondAttribute="bottom" constant="8" symbolic="YES" id="W6D-QH-m1o"/>
-                            <constraint firstItem="27b-Gc-MBD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="62" id="aJg-B2-gqL"/>
-                            <constraint firstItem="s0F-LR-aDF" firstAttribute="centerX" secondItem="Ma6-Dd-X4V" secondAttribute="centerX" id="fLj-jj-9ml"/>
-                            <constraint firstItem="cNQ-Cz-gET" firstAttribute="centerX" secondItem="Ma6-Dd-X4V" secondAttribute="centerX" id="jsS-TT-Wc8"/>
-                            <constraint firstItem="cNQ-Cz-gET" firstAttribute="top" secondItem="s0F-LR-aDF" secondAttribute="bottom" constant="52" id="rKk-YN-QUg"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="s0F-LR-aDF" id="cPW-dV-Uwg"/>
                         <outlet property="questionLabel" destination="27b-Gc-MBD" id="lwp-jp-cNf"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
